@@ -1,101 +1,18 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+body {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-}
-
-body {
     font-family: 'Roboto', sans-serif;
     color: #707070;
 }
 
 .wrapper {
-    margin: 0px;
+    margin: 0 auto;
     width: auto;
-    min-width: 300px;
+    width: 100%;
 }
 
 header {
@@ -106,28 +23,45 @@ header {
     top: 0;
 }
 
-.navigation {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    margin-top: 2%;
+.navigation-bar {
+    padding: 8px;
+    overflow: hidden;
+    position: relative;
 }
 
 header li {
     display: inline;
-    border: 1px solid #707070;
-    padding: 3px;
+    padding: 8px;
+}
+.logo {
+    float: left;
+    padding-right: 24px;
 }
 
 .logo img {
     width: 40px;
-    margin-left: 15px;
+    margin-top: 8px;
+}
+.menu-icon {
+    float: right;
+    font-size: 30px;
+    margin-top: 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
 }
 
-header li a {
-    font-size: 10px;
+#nav-links {
+    display: none;
+    margin-top: 16px;
+}
+
+header a {
+    font-size: 15px;
     color: #22B573;
     font-family: 'Lato', sans-serif;
+    padding: 8px;
 }
 
 a {
@@ -167,12 +101,13 @@ header .current {
 .herobanner {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .herobanner img {
     flex: 1;
-    height: 200px;
-    background-repeat: no-repeat;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -180,23 +115,26 @@ header .current {
     flex: 1;
     background: #22B573;
     width: 100%;
-    min-height: 240px;
+    min-height: 300px;
     text-align: center;
 }
 
 h1 {
     font-size: 30px;
-    margin-top: 15px;
-    padding: 15px;
+    padding-top: 40px;
     color: white;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
 }
 
+.heroText p {
+    padding-bottom: 24px;
+    color: rgb(223, 222, 222);
+}
+
 .herobutton {
     font-size: 25px;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 8px;
     border: 1px solid #707070;
     color: white;
     background: #B53722;
@@ -215,103 +153,52 @@ h1 {
 
 /* OPERA HOUSE */
 
-.sectionOne {
+.section-one {
+    width: 340px;
+    margin: 0 auto;
+}
+
+.oprah-house,
+.vigeland,
+.castle {
     display: flex;
     flex-direction: column;
-
+    padding: 16px;
+    margin-top: 16px;
+    text-align: left;
+    width: 330px;
+    margin: 0 auto;
 }
-
-.oprahHouse {
+.oprah-text {
     flex: 1;
-    padding: 15px;
-    border: 1px solid #707070;
-    margin-top: 15px;
-    text-align: center;
-
 }
-
-.imageOprah img {
-    width: 288px;
+.section-one img {
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 40px;
 }
 
 h2 {
-    text-align: center;
+    text-align: left;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
-.oprahButton a {
-    text-align: center;
+.section-one p {
+    padding-bottom: 16px;
+}
+
+.section-one a {
     font-size: 25px;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 8px;
     border: 1px solid #707070;
     color: white;
     background: #B53722;
     font-family: 'Roboto', sans-serif;
 }
 
-.oprahButton a:hover {
-    color: #22B573;
-    background-color: white;
-}
-
-.vigeland {
-    flex: 1;
-    padding: 15px;
-    border: 1px solid #707070;
-    margin: 2px;
-    margin-top: 15px;
-    text-align: center;
-}
-
-.imageVigeland img {
-    width: 288px;
-
-}
-
-.vigelandButton a {
-    text-align: center;
-    font-size: 25px;
-    padding: 10px;
-    margin-top: 20px;
-    border: 1px solid #707070;
-    color: white;
-    background: #B53722;
-    font-family: 'Roboto', sans-serif;
-}
-
-.vigelandButton a:hover {
-    color: #22B573;
-    background-color: white;
-}
-
-.castle {
-    flex: 1;
-    padding: 15px;
-    border: 1px solid #707070;
-    margin: 2px;
-    margin-top: 15px;
-    text-align: center;
-}
-
-.imageCastle img {
-    width: 288px;
-}
-
-.caslteButton a {
-    text-align: center;
-    font-size: 25px;
-    padding: 10px;
-    margin-top: 20px;
-    border: 1px solid #707070;
-    color: white;
-    background: #B53722;
-    font-family: 'Roboto', sans-serif;
-}
-
-.caslteButton a:hover {
+.section-one a:hover {
     color: #22B573;
     background-color: white;
 }
@@ -518,48 +405,31 @@ h5 {
 
 /* FOOTER */
 footer {
-    height: 350px;
     background: #0A693E;
     color: white;
-    margin-top: 20%;
+    margin-top: 24px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 16px;
     justify-content: space-between;
+}
+.left, 
+.middle, 
+.right {
+    flex: 1;
+    width: 250px;
+    margin: 0 auto;
 }
 
 .myname {
     text-align: center;
 }
 
-.left {
-    flex: 1;
-}
-
-.middle {
-    flex: 1;
-}
-
-.right {
-    flex: 1;
-}
-
-.about {
-    font-size: 20px;
-}
-
-.contact {
-    font-size: 20px;
-}
-
-.become {
-    font-size: 20px;
-}
 
 footer li {
     font-size: 17px;
     list-style: none;
-
+    padding-bottom: 8px;
 }
 
 
@@ -567,7 +437,7 @@ footer li {
 
 /* IPAD */
 @media only screen and (min-width:768px) {
-    .wrapper {
+    body {
         width: 700px;
         margin: 0 auto;
     }
@@ -602,7 +472,6 @@ footer li {
     }
 
     h1 {
-        margin-top: 0;
         font-size: 30px;
     }
 
@@ -620,39 +489,26 @@ footer li {
     }
 
     /* OPRAH HOUSE */
-    .imageOprah img {
-        width: 450px;
+    .section-one {
+        width: 700px;
+        margin: 0 auto;
     }
-
-    h2 {
-        font-size: 30px;
-        margin-top: 10px;
-        margin-bottom: 40px;
+    .oprah-house,
+    .vigeland,
+    .castle {
+        flex-direction: row;
+        width: 690px;
+        margin: 0 auto;
     }
-
-    .oprahButton a {
-        padding: 18px;
-        font-size: 26px;
+    .section-one img {
+        padding-right: 16px;
+        height: 250px;
     }
-
-    /* VIGELAND PARK */
-    .imageVigeland img {
-        width: 450px;
+    .section-one p {
+        font-size: 18px;
     }
-
-    .vigelandButton a {
-        padding: 20px;
-        font-size: 26px;
-    }
-
-    /* CASTLE */
-    .imageCastle img {
-        width: 450px;
-    }
-
-    .caslteButton a {
-        padding: 20px;
-        font-size: 26px;
+    .section-one h2 {
+        padding-top: 16px;
     }
 
     .aboutus {
@@ -726,6 +582,16 @@ footer li {
 
     .tourImage {
         width: 450px;
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .highlight {
+        font-size: 18px;
+    }
+    footer li {
+        font-size: 12px;
     }
 
 
