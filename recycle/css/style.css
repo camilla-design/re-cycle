@@ -1,0 +1,932 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #707070;
+}
+
+.wrapper {
+    margin: 0px;
+    width: auto;
+    min-width: 300px;
+}
+
+header {
+    background: white;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 2%;
+}
+
+header li {
+    display: inline;
+    border: 1px solid #707070;
+    padding: 3px;
+}
+
+.logo img {
+    width: 40px;
+    margin-left: 15px;
+}
+
+header li a {
+    font-size: 10px;
+    color: #22B573;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header a:link {
+    color: #22B573;
+}
+
+header a:visited {
+    color: #707070;
+}
+
+header a:hover {
+    color: white;
+    background: #B53722;
+}
+
+header a:active {
+    background: #22B573;
+    color: #B53722;
+    font-size: 20px;
+}
+
+header .current {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* HEROBANNER */
+
+.heroImageLaptop {
+    display: none;
+}
+
+.herobanner {
+    display: flex;
+    flex-direction: column;
+}
+
+.herobanner img {
+    flex: 1;
+    height: 200px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.heroText {
+    flex: 1;
+    background: #22B573;
+    width: 100%;
+    min-height: 240px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    margin-top: 15px;
+    padding: 15px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.herobutton {
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #707070;
+    color: white;
+    background: #B53722;
+    font-family: 'Roboto', sans-serif;
+}
+
+.herobutton a:hover {
+    color: #22B573;
+    background-color: white;
+}
+
+.buttonBanner a:hover {
+    color: #22B573;
+    background-color: white;
+}
+
+/* OPERA HOUSE */
+
+.sectionOne {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.oprahHouse {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #707070;
+    margin-top: 15px;
+    text-align: center;
+
+}
+
+.imageOprah img {
+    width: 288px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.oprahButton a {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #707070;
+    color: white;
+    background: #B53722;
+    font-family: 'Roboto', sans-serif;
+}
+
+.oprahButton a:hover {
+    color: #22B573;
+    background-color: white;
+}
+
+.vigeland {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #707070;
+    margin: 2px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.imageVigeland img {
+    width: 288px;
+
+}
+
+.vigelandButton a {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #707070;
+    color: white;
+    background: #B53722;
+    font-family: 'Roboto', sans-serif;
+}
+
+.vigelandButton a:hover {
+    color: #22B573;
+    background-color: white;
+}
+
+.castle {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #707070;
+    margin: 2px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.imageCastle img {
+    width: 288px;
+}
+
+.caslteButton a {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #707070;
+    color: white;
+    background: #B53722;
+    font-family: 'Roboto', sans-serif;
+}
+
+.caslteButton a:hover {
+    color: #22B573;
+    background-color: white;
+}
+
+
+/* ABOUT US */
+
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.aboutUsLogo img {
+    width: 100px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 36%;
+}
+
+.aboutUsText {
+    flex: 1;
+    margin-top: 15px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.ourProducts p {
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.aboutUs {
+    font-size: 16px;
+    margin: 15px;
+}
+
+.map {
+    flex: 1;
+}
+
+iframe {
+    width: 100%;
+}
+
+
+/* CONTACT US */
+.contactus {
+    text-align: center;
+    margin-top: 30px;
+}
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 5px 9px;
+    margin: 10px 0;
+    display: block;
+    border: 1px solid #707070;
+    box-sizing: border-box;
+}
+
+div .container {
+    padding: 60px;
+    margin-top: 25px;
+}
+
+.contactInfo {
+    margin-left: 20%;
+    margin-top: 12%;
+}
+
+h4 {
+    margin: 5px;
+    font-size: 20px;
+}
+
+.heroText p {
+    margin: 5px;
+    margin-bottom: 24px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #B53722;
+    color: white;
+    padding: 10px;
+    margin: 8px;
+}
+
+textarea {
+    width: 100%;
+}
+
+/* TOURS */
+.ourTours {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.oprahTour {
+    flex: 1;
+}
+
+.vigTour {
+    flex: 1;
+}
+
+.castleTour {
+    flex: 1;
+}
+
+.tourImage {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+.oprahImageTwo img {
+    text-align: center;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.vigimgTwo img {
+    text-align: center;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.castleImageTwo img {
+    text-align: center;
+    width: 300px;
+    border-radius: 50%;
+}
+
+h5 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.oprahTextTwo p {
+    font-size: 18px;
+    margin-top: 10%;
+    text-align: left;
+    padding-left: 8%;
+    padding-right: 5%;
+}
+
+.vigTextTwo p {
+    font-size: 18px;
+    margin-top: 10%;
+    text-align: left;
+    padding-left: 8%;
+    padding-right: 5%;
+}
+
+.castleTextTwo p {
+    font-size: 18px;
+    margin-top: 10%;
+    text-align: left;
+    padding-left: 8%;
+    padding-right: 5%;
+}
+
+.headline h3 {
+    text-align: center;
+}
+
+.book {
+    position: sticky;
+    bottom: 0;
+    float: right;
+    border: 2px solid #707070;
+    background: #B53722;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.book a {
+    color: white;
+}
+
+.book a:hover {
+    color: #22B573;
+    background-color: white;
+}
+
+/* FOOTER */
+footer {
+    height: 350px;
+    background: #0A693E;
+    color: white;
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.myname {
+    text-align: center;
+}
+
+.left {
+    flex: 1;
+}
+
+.middle {
+    flex: 1;
+}
+
+.right {
+    flex: 1;
+}
+
+.about {
+    font-size: 20px;
+}
+
+.contact {
+    font-size: 20px;
+}
+
+.become {
+    font-size: 20px;
+}
+
+footer li {
+    font-size: 17px;
+    list-style: none;
+
+}
+
+
+
+
+/* IPAD */
+@media only screen and (min-width:768px) {
+    .wrapper {
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    /* HEADER */
+    .logo img {
+        width: 80px;
+    }
+
+    header li {
+        padding: 10px;
+    }
+
+    .headerLinks {
+        margin-top: 15px;
+    }
+
+    header li a {
+        font-size: 20px;
+    }
+
+    /* HERO BANNER */
+    .herobanner {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+
+    .herobanner img {
+        width: 200px;
+        height: 300px;
+    }
+
+    h1 {
+        margin-top: 0;
+        font-size: 30px;
+    }
+
+    p.bannertext {
+        font-size: 10px;
+    }
+
+    button {
+        margin-top: 3px;
+    }
+
+    .buttonBanner a:hover {
+        color: #22B573;
+        background-color: white;
+    }
+
+    /* OPRAH HOUSE */
+    .imageOprah img {
+        width: 450px;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .oprahButton a {
+        padding: 18px;
+        font-size: 26px;
+    }
+
+    /* VIGELAND PARK */
+    .imageVigeland img {
+        width: 450px;
+    }
+
+    .vigelandButton a {
+        padding: 20px;
+        font-size: 26px;
+    }
+
+    /* CASTLE */
+    .imageCastle img {
+        width: 450px;
+    }
+
+    .caslteButton a {
+        padding: 20px;
+        font-size: 26px;
+    }
+
+    .aboutus {
+        flex-direction: row;
+        margin-top: 20%;
+        justify-content: space-between;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    .aboutUs {
+        font-size: 20px;
+    }
+
+    .aboutUsLogo img {
+        width: 150px;
+        margin-top: 15%;
+    }
+
+    h4 {
+        margin: 10px;
+        font-size: 33px;
+    }
+
+    h6 {
+        font-size: 30px;
+    }
+
+    p {
+        margin: 10px;
+        font-size: 27px;
+    }
+
+    input[type=text],
+    select {
+        font-size: 18px;
+    }
+
+    label {
+        font-size: 23px;
+    }
+
+    .contactus {
+        font-size: 44px;
+    }
+
+    input[type=submit] {
+        padding: 20px;
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    h5 {
+        font-size: 35px;
+        margin-top: 50px;
+    }
+
+    .oprahImageTwo img {
+        width: 450px;
+    }
+
+    .vigimgTwo img {
+        width: 450px;
+    }
+
+    .castleImageTwo img {
+        width: 450px;
+    }
+
+    .tourImage {
+        width: 450px;
+    }
+
+
+}
+
+/* LAPTOP */
+
+@media only screen and (min-width: 1200px) {
+    .wrapper {
+        width: 1000px;
+        max-width: 1440px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .headerLinks {
+        margin-top: 20px;
+    }
+
+    header li {
+        padding: 15px;
+        margin: 5px;
+    }
+
+    header li a {
+        font-size: 25px;
+    }
+
+    .sectionOne {
+        flex-direction: row;
+        padding: 5px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .imageOprah img {
+        width: 250px;
+    }
+
+    .oprahHouse {
+        margin-right: 10px;
+    }
+
+    .imageVigeland img {
+        width: 250px;
+    }
+
+    .vigeland {
+        margin-right: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .imageCastle img {
+        width: 250px;
+        height: 165px;
+    }
+
+    .ourTours {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tourImage {
+        width: 250px;
+        height: 250px;
+        text-align: center;
+    }
+
+    .oprahImageTwo img {
+        width: 250px;
+    }
+
+    .vigimgTwo img {
+        width: 250px;
+
+    }
+
+    .castleImageTwo img {
+        width: 250px;
+
+    }
+
+    footer {
+        height: 350px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .left {
+        flex: 1;
+    }
+
+    .middle {
+        flex: 1;
+
+    }
+
+    .right {
+        flex: 1;
+    }
+
+    .about li {
+        font-size: 30px;
+    }
+
+    .become li {
+        font-size: 30px;
+    }
+
+    footer li {
+        font-size: 20px;
+    }
+
+    .contact li {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 45px;
+    }
+
+    .aboutUs {
+        font-size: 30px;
+        padding: 25px;
+    }
+
+    .aboutUsLogo img {
+        width: 200px;
+        margin-left: 45%;
+    }
+
+    h4 {
+        margin: 20px;
+        font-size: 44px;
+    }
+
+    h5 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    p {
+        margin: 10px;
+        font-size: 30px;
+    }
+
+    .oprahTextTwo p {
+        font-size: 18px;
+        padding-right: 30%;
+    }
+
+    .vigTextTwo p {
+        font-size: 18px;
+        padding-right: 30%;
+        margin-top: 10%;
+    }
+
+    .castleTextTwo p {
+        font-size: 18px;
+        padding-right: 30%;
+        margin-top: 10%;
+    }
+
+    h6 {
+        font-size: 40px;
+    }
+
+    input[type=text],
+    select {
+        font-size: 25px;
+    }
+
+    label {
+        font-size: 30px;
+    }
+
+    .contactus {
+        font-size: 65px;
+    }
+
+    input[type=submit] {
+        padding: 20px;
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    footer {
+        padding-left: 60px;
+    }
+
+
+
+
+
+
+
+
+
+}
