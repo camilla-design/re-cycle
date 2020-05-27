@@ -7,14 +7,8 @@ body {
     vertical-align: baseline;
     font-family: 'Roboto', sans-serif;
     color: #707070;
-}
-
-.wrapper {
-    margin: 0 auto;
-    width: auto;
     width: 100%;
 }
-
 header {
     background-color: white;
     position: -webkit-sticky;
@@ -22,13 +16,12 @@ header {
     z-index: 10;
     top: 0;
 }
-
+/*NAVBAR*/
 .navigation-bar {
     padding: 8px;
     overflow: hidden;
     position: relative;
 }
-
 header li {
     display: inline;
     padding: 8px;
@@ -37,7 +30,6 @@ header li {
     float: left;
     padding-right: 24px;
 }
-
 .logo img {
     width: 40px;
     margin-top: 8px;
@@ -51,19 +43,16 @@ header li {
     right: 0;
     display: block;
 }
-
 #nav-links {
     display: none;
     margin-top: 16px;
 }
-
 header a {
     font-size: 15px;
     color: #22B573;
     font-family: 'Lato', sans-serif;
     padding: 8px;
 }
-
 a {
     text-decoration: none;
 }
@@ -71,41 +60,34 @@ a {
 header a:link {
     color: #22B573;
 }
-
 header a:hover {
     color: #707070;
 }
-
 header a:active {
     color: #B53722;
     font-size: 20px;
 }
-
 header .current {
     font-weight: bold;
     text-transform: uppercase;
     color: #707070;
 }
 
-/* HEROBANNER */
-
+/* HEROBANNER HOMEPAGE */
 .heroImageLaptop {
     display: none;
 }
-
 .herobanner {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
 }
-
 .herobanner img {
     flex: 1;
     width: 100%;
     object-fit: cover;
 }
-
 .hero-text {
     flex: 1;
     background: #22B573;
@@ -113,7 +95,6 @@ header .current {
     min-height: 300px;
     text-align: center;
 }
-
 h1 {
     font-size: 30px;
     padding-top: 40px;
@@ -121,12 +102,10 @@ h1 {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
 }
-
 .hero-text p {
     padding-bottom: 24px;
     color: rgb(223, 222, 222);
 }
-
 .herobutton {
     font-size: 25px;
     padding: 8px;
@@ -135,25 +114,21 @@ h1 {
     background: #B53722;
     font-family: 'Roboto', sans-serif;
 }
-
 .herobutton a:hover {
     color: #22B573;
     background-color: white;
 }
-
 .buttonBanner a:hover {
     color: #22B573;
     background-color: white;
 }
 
-/* OPERA HOUSE */
-
+/* TOUR SECTION HOMEPAGE */
 .section-one,
 .contact-page {
     width: 340px;
     margin: 0 auto;
 }
-
 .oprah-house,
 .vigeland,
 .castle {
@@ -173,18 +148,15 @@ h1 {
     margin: 0 auto;
     padding-top: 40px;
 }
-
 h2 {
     text-align: left;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     margin-bottom: 24px;
 }
-
 .section-one p {
     padding-bottom: 16px;
 }
-
 .section-one a {
     font-size: 25px;
     padding: 8px;
@@ -193,15 +165,12 @@ h2 {
     background: #B53722;
     font-family: 'Roboto', sans-serif;
 }
-
 .section-one a:hover {
     color: #22B573;
     background-color: white;
 }
 
-
-/* ABOUT US */
-
+/* ABOUT US PAGE */
 .about-us {
     display: flex;
     flex-direction: column;
@@ -216,7 +185,6 @@ h2 {
 .logo-about-page img {
     width: 100px;
 }
-
 .about-us-text {
     flex: 1;
     margin-top: 16px;
@@ -236,25 +204,19 @@ h3 {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
 }
-
 h6 {
     font-size: 20px;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
 }
-
-
-
 .map {
     flex: 1;
 }
-
 iframe {
     width: 100%;
 }
 
-
-/* CONTACT US */
+/* CONTACT US PAGE*/
 .contact-info {
     padding-bottom: 24px;
 }
@@ -271,7 +233,6 @@ select {
     border: 1px solid #707070;
     box-sizing: border-box;
 }
-
 h4 {
     margin-bottom: 8px;
     font-size: 20px;
@@ -286,91 +247,39 @@ input[type=submit] {
     padding: 10px;
     margin: 8px;
 }
-
 textarea {
     width: 100%;
     border: 1px solid #707070;
 }
 
-/* TOURS */
-.ourTours {
+/* TOURS PAGE*/
+.our-tours {
+    width: 300px;
+    margin: 0 auto;
+}
+.tour-flex {
     display: flex;
     flex-direction: column;
-    text-align: center;
 }
-
-.oprahTour {
+.tour-map iframe {
     flex: 1;
+    width: 300px;
+    height: 200px;
 }
-
-.vigTour {
-    flex: 1;
-}
-
-.castleTour {
-    flex: 1;
-}
-
-.tourImage {
+.tour-image img {
     width: 300px;
     height: 300px;
-    text-align: center;
-}
-
-.oprahImageTwo img {
-    text-align: center;
-    width: 300px;
     border-radius: 50%;
+    padding-top: 16px;
+    padding-bottom: 24px;
 }
-
-.vigimgTwo img {
-    text-align: center;
-    width: 300px;
-    border-radius: 50%;
-}
-
-.castleImageTwo img {
-    text-align: center;
-    width: 300px;
-    border-radius: 50%;
-}
-
 h5 {
-    text-align: center;
     font-size: 20px;
     margin-top: 30px;
 }
-
-.oprahTextTwo p {
-    font-size: 18px;
-    margin-top: 10%;
-    text-align: left;
-    padding-left: 8%;
-    padding-right: 5%;
-}
-
-.vigTextTwo p {
-    font-size: 18px;
-    margin-top: 10%;
-    text-align: left;
-    padding-left: 8%;
-    padding-right: 5%;
-}
-
-.castleTextTwo p {
-    font-size: 18px;
-    margin-top: 10%;
-    text-align: left;
-    padding-left: 8%;
-    padding-right: 5%;
-}
-
-.headline h3 {
-    text-align: center;
-}
-
 .book {
     position: sticky;
+    z-index: 1000;
     bottom: 0;
     float: right;
     border: 2px solid #707070;
@@ -379,11 +288,9 @@ h5 {
     font-size: 30px;
     padding: 15px;
 }
-
 .book a {
     color: white;
 }
-
 .book a:hover {
     color: #22B573;
     background-color: white;
@@ -398,6 +305,8 @@ footer {
     flex-direction: column;
     padding: 16px;
     justify-content: space-between;
+    width: 340px;
+    margin: 0 auto;
 }
 .left, 
 .middle, 
@@ -406,20 +315,14 @@ footer {
     width: 250px;
     margin: 0 auto;
 }
-
 .myname {
     text-align: center;
 }
-
-
 footer li {
     font-size: 17px;
     list-style: none;
     padding-bottom: 8px;
 }
-
-
-
 
 /* IPAD */
 @media only screen and (min-width:768px) {
@@ -428,7 +331,7 @@ footer li {
         margin: 0 auto;
     }
 
-    /* HEADER */
+    /* NAVIGATION BAR */
     .logo img {
         width: 70px;
         padding-bottom: 8px;
@@ -447,37 +350,32 @@ footer li {
     .menu-icon {
         display: none;
     }
-    
 
-    /* HERO BANNER */
+    /* HERO BANNER HOMEPAGE */
     .herobanner {
         display: flex;
         flex-direction: row;
         height: 100%;
     }
-
     .herobanner img {
         width: 200px;
         height: 300px;
     }
-
     h1 {
         font-size: 30px;
     }
-
     p.bannertext {
         font-size: 10px;
     }
-
     button {
         margin-top: 3px;
     }
-
     .buttonBanner a:hover {
         color: #22B573;
         background-color: white;
     }
 
+    /*TOUR SECTION HOMEPAGE*/
     .section-one {
         width: 700px;
         margin: 0 auto;
@@ -504,8 +402,7 @@ footer li {
         padding-top: 16px;
     }
 
-    /* ABOUT US*/
-
+    /* ABOUT US PAGE*/
     .about-us{
         flex-direction: row;
         margin-top: 24px;
@@ -529,16 +426,15 @@ footer li {
         width: 150px;
         margin-top: 15%;
     }
-
     h4 {
         margin: 10px;
         font-size: 33px;
     }
-
     h6 {
         font-size: 30px;
         margin-bottom: 16px;
     }
+
     /* CONTACT PAGE*/
     .contact-page {
         flex-direction: row;
@@ -556,31 +452,30 @@ footer li {
     label {
         font-size: 23px;
     }
-
-
     h5 {
         font-size: 35px;
         margin-top: 50px;
     }
 
-    .oprahImageTwo img {
-        width: 450px;
+    /*TOURS*/
+    .our-tours {
+        width: 700px;
     }
-
-    .vigimgTwo img {
-        width: 450px;
+    .tour-flex {
+        flex-direction: row;
+        justify-content: space-between;
     }
-
-    .castleImageTwo img {
-        width: 450px;
+    .tour-map iframe {
+        height: 300px;
     }
-
-    .tourImage {
-        width: 450px;
+    .tour-image img {
+        padding: 0;
     }
     footer {
         flex-direction: row;
         justify-content: space-between;
+        width: 700px;
+        margin: 0 auto;
     }
     .highlight {
         font-size: 18px;
@@ -588,8 +483,6 @@ footer li {
     footer li {
         font-size: 12px;
     }
-
-
 }
 
 /* LAPTOP */
@@ -603,11 +496,9 @@ footer li {
         width: 1000px;
         margin: 0 auto;
     }
-
     .logo img {
         width: 100px;
     }
-
     header a {
         font-size: 25px;
         padding: 16px;
@@ -615,11 +506,9 @@ footer li {
     .navigation-bar {
         margin-top: 16px;
     }
-
     .vigeland {
         margin-right: 10px;
     }
-
     h2 {
         font-size: 20px;
     }
@@ -633,30 +522,6 @@ footer li {
     .form-container {
         width: 400px;
     }
-    .ourTours {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .tourImage {
-        width: 250px;
-        height: 250px;
-        text-align: center;
-    }
-
-    .oprahImageTwo img {
-        width: 250px;
-    }
-
-    .vigimgTwo img {
-        width: 250px;
-
-    }
-
-    .castleImageTwo img {
-        width: 250px;
-
-    }
     .about-us-text {
         padding-right: 48px;
     }
@@ -664,55 +529,24 @@ footer li {
     .qualifications {
         width: 1200px;
     }
-
     h3 {
         font-size: 45px;
     }
     .contact-info p {
         font-size: 20px;
     }
-
     h4 {
         font-size: 30px;
     }
-
     h5 {
         font-size: 20px;
         font-weight: bold;
     }
-
-
-    .oprahTextTwo p {
-        font-size: 18px;
-        padding-right: 30%;
-    }
-
-    .vigTextTwo p {
-        font-size: 18px;
-        padding-right: 30%;
-        margin-top: 10%;
-    }
-
-    .castleTextTwo p {
-        font-size: 18px;
-        padding-right: 30%;
-        margin-top: 10%;
-    }
-
     h6 {
         font-size: 40px;
     }
-
     footer {
-        padding-left: 60px;
+        width: 1170px;
+        margin-top: 60px;
     }
-
-
-
-
-
-
-
-
-
 }
