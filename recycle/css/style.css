@@ -148,7 +148,8 @@ h1 {
 
 /* OPERA HOUSE */
 
-.section-one {
+.section-one,
+.contact-page {
     width: 340px;
     margin: 0 auto;
 }
@@ -254,11 +255,13 @@ iframe {
 
 
 /* CONTACT US */
-.contactus {
-    text-align: center;
-    margin-top: 30px;
+.contact-info {
+    padding-bottom: 24px;
 }
-
+.contact-page {
+    display: flex;
+    flex-direction: column;
+}
 input[type=text],
 select {
     width: 100%;
@@ -269,26 +272,13 @@ select {
     box-sizing: border-box;
 }
 
-div .container {
-    padding: 60px;
-    margin-top: 25px;
-}
-
-.contactInfo {
-    margin-left: 20%;
-    margin-top: 12%;
-}
-
 h4 {
-    margin: 5px;
+    margin-bottom: 8px;
     font-size: 20px;
 }
-
-.heroText p {
-    margin: 5px;
-    margin-bottom: 24px;
+span {
+    color: #22B573;
 }
-
 input[type=submit] {
     width: 100%;
     background-color: #B53722;
@@ -299,6 +289,7 @@ input[type=submit] {
 
 textarea {
     width: 100%;
+    border: 1px solid #707070;
 }
 
 /* TOURS */
@@ -487,7 +478,6 @@ footer li {
         background-color: white;
     }
 
-    /* OPRAH HOUSE */
     .section-one {
         width: 700px;
         margin: 0 auto;
@@ -549,25 +539,24 @@ footer li {
         font-size: 30px;
         margin-bottom: 16px;
     }
-
-    input[type=text],
-    select {
-        font-size: 18px;
+    /* CONTACT PAGE*/
+    .contact-page {
+        flex-direction: row;
+        width: 600px;
+        margin: 0 auto;
     }
-
+    .contact-info {
+        width: 200px;
+        margin: 0 auto;
+    }
+    .form-container {
+        margin-top: 120px;
+        width: 300px;
+    }
     label {
         font-size: 23px;
     }
 
-    .contactus {
-        font-size: 44px;
-    }
-
-    input[type=submit] {
-        padding: 20px;
-        font-size: 30px;
-        margin-top: 30px;
-    }
 
     h5 {
         font-size: 35px;
@@ -634,7 +623,16 @@ footer li {
     h2 {
         font-size: 20px;
     }
-
+    .contact-page {
+        width: 900px;
+        margin: 0 auto;
+    }
+    .contact-info {
+        width: 400px;
+    }
+    .form-container {
+        width: 400px;
+    }
     .ourTours {
         display: flex;
         flex-direction: row;
@@ -670,11 +668,12 @@ footer li {
     h3 {
         font-size: 45px;
     }
-
+    .contact-info p {
+        font-size: 20px;
+    }
 
     h4 {
-        margin: 20px;
-        font-size: 44px;
+        font-size: 30px;
     }
 
     h5 {
@@ -682,10 +681,6 @@ footer li {
         font-weight: bold;
     }
 
-    p {
-        margin: 10px;
-        font-size: 30px;
-    }
 
     .oprahTextTwo p {
         font-size: 18px;
@@ -706,25 +701,6 @@ footer li {
 
     h6 {
         font-size: 40px;
-    }
-
-    input[type=text],
-    select {
-        font-size: 25px;
-    }
-
-    label {
-        font-size: 30px;
-    }
-
-    .contactus {
-        font-size: 65px;
-    }
-
-    input[type=submit] {
-        padding: 20px;
-        font-size: 30px;
-        margin-top: 30px;
     }
 
     footer {

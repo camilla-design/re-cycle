@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Contact us for tour booking">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/ee54249b54.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto&display=swap" rel="stylesheet">
     <title>Contact Us</title>
 </head>
@@ -15,67 +16,70 @@
     <div class="wrapper">
 
         <header>
-            <div class="navigation">
+            <div class="navigation-bar">
                 <div class="logo">
-                    <img src="images/logorecycle.jpg" alt="logo">
+                    <a href="index.html"><img src="images/logorecycle.jpg" alt="logo"></a>
                 </div>
-                <div class="headerLinks">
-                    <nav>
-                        <ul>
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="./about.html">About Us</a></li>
-                            <li><a class="current" href="./contact.html">Contact</a></li>
-                            <li><a href="./tour.html">Tours</a></li>
-                        </ul>
-                    </nav>
+                <div id="nav-links">
+                    <a href="./about.html">About Us</a>
+                    <a class="current" href="./contact.html">Contact</a>
+                    <a href="./tour.html">Tours</a>
                 </div>
+                <a href="javascript:void(0);" class="menu-icon" onclick="navigationBar()">
+                    <i class="fas fa-bars"></i>
+                </a>
             </div>
         </header>
 
         <main>
-            <h3 class="contactus">Contact Us</h3>
-            <div class="contactInfo">
-                <h4>Adress:</h4>
-                <p>Mølleparken 4, 0459 Oslo</p>
-                <h4>Email:</h4>
-                <p>re@cycling.com</p>
-                <h4>Phone:</h4>
-                <p>38 00 00 00</p>
-            </div>
-            <div class="container">
-                <form action="#">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <div class="contact-page">
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <h4>Adress:</h4>
+                    <p>Mølleparken 4, 0459 Oslo</p>
+                    <h4>Email:</h4>
+                    <p>re@cycling.com</p>
+                    <h4>Phone:</h4>
+                    <p>38 00 00 00</p>
+                </div>
+                <div class="form-container">
+                    <div id="error">
+                    </div>
+                    <form action="./comfirmed.html" id="contactForm" onsubmit="return formValidation();">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-                    <label for="country">Country</label>
-                    <select id="country" name="country">
-                        <option value="norway">Norway</option>
-                        <option value="USA">USA</option>
-                        <option value="South Africa">South Africa</option>
-                    </select>
-                    <label for="subject">Write your message</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px">
+                        <label for="email">Email</label>
+                        <input type="text" placeholder="Email" id="email">
+
+                        <label for="subject">Write your message: </label>
+                        <textarea type="text" id="subject" name="subject" placeholder="Write something.."
+                            style="height:170px">
                     </textarea>
 
-                    <input type="submit" value="Submit">
-                </form>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
             </div>
         </main>
+
 
         <footer>
             <div class="left">
                 <ul>
-                    <li class="about">About Us</li>
+                    <li class="highlight">About Us</li>
                     <li>Our company</li>
                     <li>Work with us</li>
+                    <li>Definition</li>
+                    <li>Product Qualifications</li>
                 </ul>
             </div>
             <div class="middle">
                 <ul>
-                    <li class="contact">Contact Us</li>
+                    <li class="highlight">Contact Us</li>
                     <li>Visit us: Mølleparken 4, <br> 0459 Oslo</li>
                     <li>Call us: 38 00 00 00</li>
                     <li>Email us: re@cycle.com</li>
@@ -83,7 +87,7 @@
             </div>
             <div class="right">
                 <ul>
-                    <li class="become">Our Tours</li>
+                    <li class="highlight">Our Tours</li>
                     <li>Visit the Oprah House</li>
                     <li>Visit Vigeland Park</li>
                     <li>Visit the Norwegian Castle</li>
@@ -92,6 +96,9 @@
         </footer>
         <p class="myname">copyright ©Camilla Reppen</p>
     </div>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
 </body>
 
 </html>
