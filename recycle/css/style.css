@@ -545,6 +545,16 @@ footer li {
     h6 {
         font-size: 40px;
     }
+    .our-tours {
+        width: 900px;
+        margin: 0 auto;
+    }
+    .our-tours iframe {
+        width: 500px;
+    }
+    .our-tours p {
+        padding-bottom: 8px;
+    }
     footer {
         width: 1170px;
         margin-top: 60px;
