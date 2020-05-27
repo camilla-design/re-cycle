@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    background: white;
+    background-color: white;
     position: -webkit-sticky;
     position: sticky;
     z-index: 10;
@@ -72,10 +72,6 @@ header a:link {
     color: #22B573;
 }
 
-header a:visited {
-    color: #707070;
-}
-
 header a:hover {
     color: white;
     background: #B53722;
@@ -90,6 +86,7 @@ header a:active {
 header .current {
     font-weight: bold;
     text-transform: uppercase;
+    color: #707070;
 }
 
 /* HEROBANNER */
@@ -444,20 +441,24 @@ footer li {
 
     /* HEADER */
     .logo img {
-        width: 80px;
+        width: 70px;
+        padding-bottom: 8px;
     }
-
-    header li {
-        padding: 10px;
-    }
-
-    .headerLinks {
-        margin-top: 15px;
-    }
-
-    header li a {
+    header a {
         font-size: 20px;
+        padding: 8px;
     }
+    .navigation-bar {
+        margin-top: 8px;
+    }
+    #nav-links {
+        display: block;
+        float: right;
+    }
+    .menu-icon {
+        display: none;
+    }
+    
 
     /* HERO BANNER */
     .herobanner {
@@ -600,45 +601,25 @@ footer li {
 /* LAPTOP */
 
 @media only screen and (min-width: 1200px) {
-    .wrapper {
+    body {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .section-one {
         width: 1000px;
-        max-width: 1440px;
+        margin: 0 auto;
     }
 
     .logo img {
         width: 100px;
     }
 
-    .headerLinks {
-        margin-top: 20px;
-    }
-
-    header li {
-        padding: 15px;
-        margin: 5px;
-    }
-
-    header li a {
+    header a {
         font-size: 25px;
+        padding: 16px;
     }
-
-    .sectionOne {
-        flex-direction: row;
-        padding: 5px;
-        margin-top: 10%;
-        margin-bottom: 10%;
-    }
-
-    .imageOprah img {
-        width: 250px;
-    }
-
-    .oprahHouse {
-        margin-right: 10px;
-    }
-
-    .imageVigeland img {
-        width: 250px;
+    .navigation-bar {
+        margin-top: 16px;
     }
 
     .vigeland {
@@ -649,10 +630,6 @@ footer li {
         font-size: 20px;
     }
 
-    .imageCastle img {
-        width: 250px;
-        height: 165px;
-    }
 
     .ourTours {
         display: flex;
@@ -679,40 +656,6 @@ footer li {
 
     }
 
-    footer {
-        height: 350px;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .left {
-        flex: 1;
-    }
-
-    .middle {
-        flex: 1;
-
-    }
-
-    .right {
-        flex: 1;
-    }
-
-    .about li {
-        font-size: 30px;
-    }
-
-    .become li {
-        font-size: 30px;
-    }
-
-    footer li {
-        font-size: 20px;
-    }
-
-    .contact li {
-        font-size: 30px;
-    }
 
     h3 {
         font-size: 45px;
