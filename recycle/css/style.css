@@ -9,6 +9,7 @@ body {
     color: #707070;
     width: 100%;
 }
+
 header {
     background-color: white;
     position: -webkit-sticky;
@@ -16,24 +17,29 @@ header {
     z-index: 10;
     top: 0;
 }
+
 /*NAVBAR*/
 .navigation-bar {
     padding: 8px;
     overflow: hidden;
     position: relative;
 }
+
 header li {
     display: inline;
     padding: 8px;
 }
+
 .logo {
     float: left;
     padding-right: 24px;
 }
+
 .logo img {
     width: 40px;
     margin-top: 8px;
 }
+
 .menu-icon {
     float: right;
     font-size: 30px;
@@ -43,16 +49,19 @@ header li {
     right: 0;
     display: block;
 }
+
 #nav-links {
     display: none;
     margin-top: 16px;
 }
+
 header a {
     font-size: 15px;
     color: #22B573;
     font-family: 'Lato', sans-serif;
     padding: 8px;
 }
+
 a {
     text-decoration: none;
 }
@@ -60,13 +69,16 @@ a {
 header a:link {
     color: #22B573;
 }
+
 header a:hover {
     color: #707070;
 }
+
 header a:active {
     color: #B53722;
     font-size: 20px;
 }
+
 header .current {
     font-weight: bold;
     text-transform: uppercase;
@@ -77,17 +89,20 @@ header .current {
 .heroImageLaptop {
     display: none;
 }
+
 .herobanner {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
 }
+
 .herobanner img {
     flex: 1;
     width: 100%;
     object-fit: cover;
 }
+
 .hero-text {
     flex: 1;
     background: #22B573;
@@ -95,17 +110,21 @@ header .current {
     min-height: 300px;
     text-align: center;
 }
+
 h1 {
-    font-size: 30px;
-    padding-top: 40px;
+    font-size: 40px;
+    padding-top: 10px;
     color: white;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
 }
-.hero-text p {
+
+.hero-text h2 {
     padding-bottom: 24px;
     color: rgb(223, 222, 222);
+    text-align: center;
 }
+
 .herobutton {
     font-size: 25px;
     padding: 8px;
@@ -114,10 +133,12 @@ h1 {
     background: #B53722;
     font-family: 'Roboto', sans-serif;
 }
+
 .herobutton a:hover {
     color: #22B573;
     background-color: white;
 }
+
 .buttonBanner a:hover {
     color: #22B573;
     background-color: white;
@@ -129,6 +150,7 @@ h1 {
     width: 340px;
     margin: 0 auto;
 }
+
 .oprah-house,
 .vigeland,
 .castle {
@@ -140,23 +162,28 @@ h1 {
     width: 330px;
     margin: 0 auto;
 }
+
 .oprah-text {
     flex: 1;
 }
+
 .section-one img {
     width: 320px;
     margin: 0 auto;
     padding-top: 40px;
 }
+
 h2 {
     text-align: left;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     margin-bottom: 24px;
 }
+
 .section-one p {
-    padding-bottom: 16px;
+    padding-bottom: 14px;
 }
+
 .section-one a {
     font-size: 25px;
     padding: 8px;
@@ -165,6 +192,7 @@ h2 {
     background: #B53722;
     font-family: 'Roboto', sans-serif;
 }
+
 .section-one a:hover {
     color: #22B573;
     background-color: white;
@@ -175,43 +203,53 @@ h2 {
     display: flex;
     flex-direction: column;
 }
+
 .about-us-text {
     flex: 1;
 }
+
 .logo-about-page {
     width: 100px;
     margin: 0 auto;
 }
+
 .logo-about-page img {
     width: 100px;
 }
+
 .about-us-text {
     flex: 1;
     margin-top: 16px;
     width: 340px;
     margin: 0 auto;
 }
+
 .defenition,
 .qualifications {
     width: 340px;
     margin: 0 auto;
 }
+
 .qualifications {
     padding-bottom: 18px;
 }
+
 h3 {
     font-size: 25px;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
 }
+
 h6 {
     font-size: 20px;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
 }
+
 .map {
     flex: 1;
 }
+
 iframe {
     width: 100%;
 }
@@ -220,10 +258,12 @@ iframe {
 .contact-info {
     padding-bottom: 24px;
 }
+
 .contact-page {
     display: flex;
     flex-direction: column;
 }
+
 input[type=text],
 select {
     width: 100%;
@@ -233,13 +273,16 @@ select {
     border: 1px solid #707070;
     box-sizing: border-box;
 }
+
 h4 {
     margin-bottom: 8px;
     font-size: 20px;
 }
+
 span {
     color: #22B573;
 }
+
 input[type=submit] {
     width: 100%;
     background-color: #B53722;
@@ -247,6 +290,7 @@ input[type=submit] {
     padding: 10px;
     margin: 8px;
 }
+
 textarea {
     width: 100%;
     border: 1px solid #707070;
@@ -257,15 +301,18 @@ textarea {
     width: 300px;
     margin: 0 auto;
 }
+
 .tour-flex {
     display: flex;
     flex-direction: column;
 }
+
 .tour-map iframe {
     flex: 1;
     width: 300px;
     height: 200px;
 }
+
 .tour-image img {
     width: 300px;
     height: 300px;
@@ -273,10 +320,12 @@ textarea {
     padding-top: 16px;
     padding-bottom: 24px;
 }
+
 h5 {
     font-size: 20px;
     margin-top: 30px;
 }
+
 .book {
     position: sticky;
     z-index: 1000;
@@ -288,9 +337,11 @@ h5 {
     font-size: 30px;
     padding: 15px;
 }
+
 .book a {
     color: white;
 }
+
 .book a:hover {
     color: #22B573;
     background-color: white;
@@ -308,16 +359,19 @@ footer {
     width: 340px;
     margin: 0 auto;
 }
-.left, 
-.middle, 
+
+.left,
+.middle,
 .right {
     flex: 1;
     width: 250px;
     margin: 0 auto;
 }
+
 .myname {
     text-align: center;
 }
+
 footer li {
     font-size: 17px;
     list-style: none;
@@ -336,17 +390,21 @@ footer li {
         width: 70px;
         padding-bottom: 8px;
     }
+
     header a {
         font-size: 20px;
         padding: 8px;
     }
+
     .navigation-bar {
         margin-top: 8px;
     }
+
     #nav-links {
         display: block;
         float: right;
     }
+
     .menu-icon {
         display: none;
     }
@@ -357,19 +415,24 @@ footer li {
         flex-direction: row;
         height: 100%;
     }
+
     .herobanner img {
         width: 200px;
         height: 300px;
     }
+
     h1 {
         font-size: 30px;
     }
+
     p.bannertext {
         font-size: 10px;
     }
+
     button {
         margin-top: 3px;
     }
+
     .buttonBanner a:hover {
         color: #22B573;
         background-color: white;
@@ -380,6 +443,7 @@ footer li {
         width: 700px;
         margin: 0 auto;
     }
+
     .oprah-house,
     .vigeland,
     .castle {
@@ -387,10 +451,12 @@ footer li {
         width: 690px;
         margin: 0 auto;
     }
+
     .section-one img {
         padding-right: 16px;
         height: 250px;
     }
+
     .section-one p,
     .defenition p,
     .qualifications p,
@@ -398,38 +464,46 @@ footer li {
         font-size: 18px;
         margin: 0;
     }
+
     .section-one h2 {
         padding-top: 16px;
     }
 
     /* ABOUT US PAGE*/
-    .about-us{
+    .about-us {
         flex-direction: row;
         margin-top: 24px;
         justify-content: space-between;
     }
+
     .map iframe {
         height: 200px;
         margin-top: 24px;
     }
+
     h3 {
         font-size: 35px;
     }
+
     .about-us-text {
         padding-right: 24px;
     }
+
     .defenition,
     .qualifications {
         width: 700px;
     }
+
     .logo-about-page img {
         width: 150px;
         margin-top: 15%;
     }
+
     h4 {
         margin: 10px;
         font-size: 33px;
     }
+
     h6 {
         font-size: 30px;
         margin-bottom: 16px;
@@ -441,17 +515,21 @@ footer li {
         width: 600px;
         margin: 0 auto;
     }
+
     .contact-info {
         width: 200px;
         margin: 0 auto;
     }
+
     .form-container {
         margin-top: 120px;
         width: 300px;
     }
+
     label {
         font-size: 23px;
     }
+
     h5 {
         font-size: 35px;
         margin-top: 50px;
@@ -461,25 +539,31 @@ footer li {
     .our-tours {
         width: 700px;
     }
+
     .tour-flex {
         flex-direction: row;
         justify-content: space-between;
     }
+
     .tour-map iframe {
         height: 300px;
     }
+
     .tour-image img {
         padding: 0;
     }
+
     footer {
         flex-direction: row;
         justify-content: space-between;
         width: 700px;
         margin: 0 auto;
     }
+
     .highlight {
         font-size: 18px;
     }
+
     footer li {
         font-size: 12px;
     }
@@ -492,69 +576,89 @@ footer li {
         width: 1200px;
         margin: 0 auto;
     }
+
     .section-one {
         width: 1000px;
         margin: 0 auto;
     }
+
     .logo img {
         width: 100px;
     }
+
     header a {
         font-size: 25px;
         padding: 16px;
     }
+
     .navigation-bar {
         margin-top: 16px;
     }
+
     .vigeland {
         margin-right: 10px;
     }
+
     h2 {
         font-size: 20px;
     }
+
     .contact-page {
         width: 900px;
         margin: 0 auto;
     }
+
     .contact-info {
         width: 400px;
     }
+
     .form-container {
         width: 400px;
     }
+
     .about-us-text {
         padding-right: 48px;
     }
+
     .defenition,
     .qualifications {
         width: 1200px;
     }
+
     h3 {
         font-size: 45px;
     }
+
     .contact-info p {
         font-size: 20px;
     }
+
     h4 {
         font-size: 30px;
     }
+
     h5 {
         font-size: 20px;
         font-weight: bold;
     }
+
     h6 {
         font-size: 40px;
     }
+
     .our-tours {
         width: 900px;
         margin: 0 auto;
     }
+
     .our-tours iframe {
         width: 500px;
     }
+
     .our-tours p {
         padding-bottom: 8px;
     }
+
     footer {
         width: 1170px;
         margin-top: 60px;
